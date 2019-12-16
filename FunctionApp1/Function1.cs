@@ -26,7 +26,7 @@ namespace FunctionApp1
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Hello this, {name}")
+                ? (ActionResult)new OkObjectResult($"Hello this is, {name}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
